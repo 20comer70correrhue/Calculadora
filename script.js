@@ -6,18 +6,8 @@ function imc(){
     const peso = document.getElementById('peso').value;
     const resultado = document.getElementById
     ('resultado');
-    
 
-    if(nome != "" && altura !="" && peso !=""){
-
-        const valorIMC = (peso/(altura*altura)).toFixed(1);
-        let classicacao = "";
-
-        if(valorIMC < 18.5){
-            classificacao = "Abaixo do peso":
-        }
-
-    }
+    const valorIMC = (peso/(altura*altura)).toFixed(1);
 
     resultado.textContent = `${nome} seu IMC é ${valorIMC}!`;
 }
